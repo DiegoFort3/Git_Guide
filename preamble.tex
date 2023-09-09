@@ -7,5 +7,18 @@
 \usepackage{tabularray}     % For creating tables
 \usepackage{hyperref}       % For hyperlinks
 
+\usepackage{indentfirst}    %To indent ever paragraph
 
 \usepackage[margin=1in]{geometry} %Chnages margin
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear the header and footer
+
+\lhead{\projectTitle}
+\rhead{\reportTitle}
+
+
+\fancyfoot[R]{\latestVersion}
+\fancyfoot[C]{\thepage}
