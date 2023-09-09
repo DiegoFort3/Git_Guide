@@ -1,0 +1,113 @@
+\documentclass{article} % Document class
+\input{preamble.tex}
+
+% Title and author
+\title{My LaTeX Document with TOC, Figures, and Tables}
+\author{Your Name}
+
+\begin{document}
+
+% Create the title page
+
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=3cm]{Fun_pics/bantha_inc.jpg}
+\end{figure}
+
+\begin{center}
+	\textbf{\LARGE Bantha Inc.} \\
+	\vspace{1cm}
+	\Large \today \\
+	\vspace{0.3cm}
+	\large Report  On\\
+
+	\rule{\linewidth}{0.5pt} \\
+	\vspace{0.2cm}
+	\textbf{\LARGE How to Git \\ \vspace{0.3cm} \large Guide For Git} \\
+	\vspace{0.1cm}
+	\rule{\linewidth}{0.5pt} \\
+
+	\vspace{1.5cm}
+
+	\begin{tabular}{lr}
+		\textit{Author:} & Die Go \\
+	\end{tabular}
+
+	\vspace{1cm}
+	\date{}
+\end{center}
+
+
+
+
+% Table of Contents
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{2}  % Adjust the starting page number
+\tableofcontents
+
+% List of Figures
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{3}  % Adjust the starting page number
+\listoffigures
+
+% List of Tables
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{4}  % Adjust the starting page number
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Revision History} % Section 1
+\begin{center}
+    \begin{tblr}{
+        hlines,
+        vlines,
+        %row{1} = {bg=gray,fg=white},
+        %row{2} = {bg=green9},
+        rows = {ht=.55cm, valign=m},
+        columns = {halign=c},
+        %colspec = {Q[1cm,bg=gray,fg=white] XXX},} 
+        %colspec = {Q[2cm] XXX},} 
+        colspec = {Q[3cm] XXX},} 
+        \textbf{Date} & \textbf{Version} & \textbf{Author} & \textbf{Description} \\
+        06MAR2023 & 0.0.1 & Diego F. & Template Created \\
+        06MAR2023 & 0.0.2 & Diego F. & Executive Summary \\
+    \end{tblr}
+\end{center}
+
+
+\section{Introduction} % Section 2
+% ... (unchanged content)
+
+\section{Methods} % Section 3
+% ... (unchanged content)
+
+\section{Results} % Section 4
+% ... (unchanged content)
+
+\subsection{Figures} % Subsection 4.1
+% ... (unchanged content)
+
+\section{Conclusion} % Section 5
+% ... (unchanged content)
+
+\subsection{Tables} % Subsection 5.1
+% ... (unchanged content)
+
+\newpage
+\section*{HI}
+% References (if needed)
+% \newpage
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\end{document}
