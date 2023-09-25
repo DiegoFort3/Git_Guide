@@ -94,7 +94,7 @@ This is a guide of how to do Git. It is a really beginner thing as I will go thr
 First on creating a repo, create a gitignore for it. Google the right gitignore for respective program. Like Latex and KiCad stuff. Gitignore is a file that specifies files to not be pushed to the repo. 
 
 
-\begin{lstlisting}[caption={Commands for init first repo},captionpos=b]
+\begin{lstlisting}[caption={Commands for init first repo},captionpos=b,label=lst:firstRepo]
 	touch .gitignore
 
 	git init 
@@ -109,17 +109,35 @@ First on creating a repo, create a gitignore for it. Google the right gitignore 
 \end{lstlisting}
 
 On the first push do:
-\begin{figure}[H]
-	\begin{lstlisting}
-		git push -u origin master
-	\end{lstlisting}
-	\label{firstPush}
-	\caption{First Push}
-\end{figure}
+\begin{lstlisting}[caption={First Push},captionpos=b,label=lst:firstPush]
+	git push -u origin master
+\end{lstlisting}
 
 
+\begin{enumerate}
+	\item git push: This is the main Git command used for pushing changes to a remote repository. It takes the changes you've committed locally and sends them to the specified remote repository.
 
-\chapter{Results} % Section 4
-% ... (unchanged content)
+	\item -u (or --set-upstream): This option is used to set up a tracking relationship between the local branch (in this case, "master") and the remote branch (in this case, "origin/master"). Setting up a tracking relationship means that in the future, when you use git push or git pull without specifying a branch name, Git will know which remote branch to push to or pull from. It's a convenient way to streamline your workflow.
+	
+	\item origin: This is the name of the remote repository you are pushing your changes to. "Origin" is a commonly used default name for the remote repository from which you initially cloned your local repository. You can have multiple remotes if your project requires it, and you'd use the appropriate remote name here.
+	
+	\item master: This is the name of the local branch that you want to push to the remote repository. In Git, "master" is a default branch name, but your project may use a different branch name as its main branch.
+\end{enumerate}
+
+So, when you run git push -u origin master, you are pushing the changes from your local "master" branch to the "master" branch in the remote repository called "origin", and you are setting up tracking so that future pushes and pulls can be done without specifying branch names if desired. 
+If the remote branch is named differently then use:
+
+
+\begin{lstlisting}[caption={Branch Name Change},captionpos=b,label=lst:nameChange]
+	git branch -m master main
+		or
+	git branch -M main
+\end{lstlisting}
+
+
+\section{Cloning}
+
+
+\chapter{Results} 
 
 \end{document}
