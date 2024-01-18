@@ -1,0 +1,130 @@
+\documentclass[12pt]{report} % Document class
+\input{preamble.tex}
+
+
+\newcommand{\projectTitle}{Korea Trip Guide}
+\newcommand{\reportTitle}{Information stumbled upon for Korea}
+\newcommand{\latestVersion}{Version 0.0.1}
+
+
+\begin{document}
+
+% Create the title page
+
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=3cm]{Fun_pics/bantha_inc.jpg}
+\end{figure}
+
+\begin{center}
+	\textbf{\LARGE Bantha Inc.} \\
+	\vspace{1cm}
+	\Large \today \\
+	\vspace{0.3cm}
+
+	\rule{\linewidth}{0.5pt} \\
+	\vspace{0.2cm}
+\LARGE \projectTitle \\ \vspace{0.3cm} \large \reportTitle\\
+
+
+	\vspace{0.1cm}
+	\rule{\linewidth}{0.5pt} \\
+
+	\vspace{1.5cm}
+
+	\begin{tabular}{lr}
+		\textit{Author:} & Die Go \\
+	\end{tabular}
+
+	\vspace{1cm}
+	\date{}
+\end{center}
+\newpage
+
+\addcontentsline{toc}{chapter}{Table of Content}
+\tableofcontents
+
+
+
+\chapter*{Revision History}
+\addcontentsline{toc}{chapter}{Revision History}
+\begin{center}
+    \begin{tblr}{
+        hlines,
+        vlines,
+        %row{1} = {bg=gray,fg=white},
+        %row{2} = {bg=green9},
+        rows = {ht=.55cm, valign=m},
+        columns = {halign=c},
+        %colspec = {Q[1cm,bg=gray,fg=white] XXX},} 
+        %colspec = {Q[2cm] XXX},} 
+        colspec = {Q[3cm] XXX},} 
+        \textbf{Date} & \textbf{Version} & \textbf{Author} & \textbf{Description} \\
+        08SEP2023 & 0.0.1 & Diego F. & Template Created \\
+        16JAN2024 & 0.0.2 & Diego F. & Executive Summary \\
+    \end{tblr}
+\end{center}
+\newpage
+
+
+
+
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\newpage
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Table}
+\newpage
+
+\lstlistoflistings
+\addcontentsline{toc}{chapter}{List of Listings}
+\newpage
+%Start of report
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+\chapter{Introduction}
+This document is a compilation of information I have come across that may help in planning and packing my trip to Korea. This is from flying in to flying out. 
+
+\chapter{Packing}
+I think I can just bring my 32L duffel bag and 26L backpack and just hand wash my clothes. 
+
+Note:
+Maurico Moves (YouTube) states that Merino Wool doesn't smell for weeks, dries fast ,and very wrinkle resistant. He recommends UNBOUND Merino and WESTERN RISE. Looking those up; and they are super expensive in my opinion.
+\section*{Clothing}
+\begin{enumerate}
+	\item 6 set of underwear
+	\item 6 set of socks
+\end{enumerate}
+\section*{Hygiene}
+\section*{Technology}
+\section*{Support}
+\section*{Flying}
+
+\chapter{Phone Plane}
+Need to figure out if I need some sort of SIM or MiFi equipment for using data. 
+\section*{eSIM}
+Only country-unlocked phones that support eSIM can be used.
+\section{Sources}
+
+https://www.youtube.com/watch?v=fqu02-6c7Os
+Video of using one bag to travel
+
+https://thereshegoesagain.org/korea-itinerary-7-days/
+7 day trip in Korea article
+
+
+%https://www.klook.com/en-US/activity/62329-esim-lguplus-southkorea/?aid=1712&aff_adid=590154&aff_label1=Korea&aff_label2=Korea&aff_label3=SIM&aff_pid=&aff_sid=&utm_medium=affiliate-alwayson&utm_source=non-network&utm_campaign=1712&utm_term=&utm_content=&aff_klick_id=56716328821-1712-590154-3540edc 
+eSIM
+
+https://www.neverendingfootsteps.com/cost-of-travel-south-korea-budget/
+Traveling for a week. Has estimated prices in US dollars.
+\chapter{Results} 
+
+\end{document}
